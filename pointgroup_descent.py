@@ -1,0 +1,37 @@
+import networkx as nx
+
+hm_to_schoen = {"1": "C1",
+                "-1": "Ci",
+                "2": "C2",
+                "m": "C1h",
+                "3": "C3",
+                "4": "C4",
+                "-4": "S4",
+                "2/m": "C2h",
+                "222": "D2",
+                "mm2": "C2v",
+                "-3": "C3i",
+                "6": "C6",
+                "-6": "C3h",
+                "32": "D3",
+                "3m": "C3v",
+                "mmm": "D2h",
+                "4/m": "C4h",
+                "422": "D4",
+                "4mm": "C4v",
+                "-42m": "D2d",
+                "6/m": "C6h",
+                "23": "T",
+                "-3m": "D3d",
+                "622": "D6",
+                "6mm": "C6v",
+                "-6m2": "D3h",
+                "4/mmm": "D4h",
+                "6/mmm": "D6h",
+                "m-3": "Th",
+                "432": "O",
+                "-43m": "Td",
+                "m-3m": "Oh"}
+schoen_to_hm = dict(zip(hm_to_schoen.values(), hm_to_schoen.keys()))
+
+
